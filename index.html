@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>IT Support Job Application</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="relative min-h-screen text-gray-100">
+  <!-- Background -->
+  <div class="bg-overlay" aria-hidden="true">
+    <img src="background.jpg" alt="Background"/>
+  </div>
+
+  <!-- Header -->
+  <header class="flex items-center justify-between p-6 max-w-7xl mx-auto">
+    <div class="flex items-center space-x-4">
+      <img src="intangintung.jpg" alt="Profile photo" class="rounded-full border-4 border-white shadow-lg" width="80" height="80"/>
+      <h1 class="text-3xl font-bold drop-shadow-lg">Muhamad Luthfi Alfian</h1>
+    </div>
+    <nav class="hidden md:flex space-x-8 font-semibold text-white drop-shadow-lg">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#apply">Apply</a>
+    </nav>
+    <button id="menu-btn" aria-label="Toggle menu" class="md:hidden text-white">
+      <i class="fas fa-bars fa-lg"></i>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" aria-hidden="true"
+    class="md:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 text-white flex flex-col items-center justify-center space-y-8 text-2xl font-semibold transform -translate-y-full transition-transform duration-300">
+    <a href="#about" onclick="toggleMenu()">About Me</a>
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <a href="#apply" onclick="toggleMenu()">Apply</a>
+    <button onclick="toggleMenu()" class="mt-8 px-6 py-2 border border-indigo-400 rounded hover:bg-indigo-400 hover:text-black transition">Close</button>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-6 pb-20 relative">
+    <!-- About -->
+    <section id="about" class="section fade-slide-in">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        Hello! I'm <strong>Muhamad Luthfi Alfian</strong>, an IT Support Specialist with more than 
+        2 years of experience solving technical issues in both hardware and software environments.  
+        I have strong skills in troubleshooting computer systems, maintaining networks, and assisting 
+        users to ensure smooth business operations.  
+      </p>
+      <p class="mt-3">
+        Beyond technical expertise, I am passionate about learning new technologies and continuously 
+        improving my problem-solving abilities. I enjoy collaborating with teams, sharing knowledge, 
+        and helping others overcome their IT challenges. My career goal is to grow into a well-rounded 
+        IT professional while contributing to innovative projects and providing the best technical support.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section fade-slide-in">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div class="skill-card">
+          <i class="fas fa-network-wired fa-3x"></i>
+          <h3>Network Troubleshooting</h3>
+          <p class="mt-2 text-sm">
+            Experienced in diagnosing and fixing network issues such as connectivity problems, 
+            IP configuration, and router/switch setups. Ensures stable and secure connections for smooth daily operations.
+          </p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-headset fa-3x"></i>
+          <h3>Customer Support</h3>
+          <p class="mt-2 text-sm">
+            Skilled at assisting users with technical issues through clear communication, 
+            remote support tools, and hands-on solutions. Known for patience and professionalism in customer service.
+          </p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-tools fa-3x"></i>
+          <h3>Hardware & Software</h3>
+          <p class="mt-2 text-sm">
+            Adept at installing, configuring, and maintaining computer hardware and software. 
+            Includes OS installation, driver updates, and system performance optimization.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section fade-slide-in relative">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="project-card">
+          <h3>Network Infrastructure</h3>
+          <p class="mt-2 text-sm">
+            Designed and implemented a small office network including structured cabling, 
+            switch and router configuration, and Wi-Fi setup to support 50+ users efficiently.
+          </p>
+        </article>
+        <article class="project-card">
+          <h3>Technical Support Hardware</h3>
+          <p class="mt-2 text-sm">
+            Provided comprehensive hardware support, including assembling PCs, replacing faulty components, 
+            and ensuring all systems met performance standards for the client’s daily operations.
+          </p>
+        </article>
+        <article class="project-card">
+          <h3>System Support Database</h3>
+          <p class="mt-2 text-sm">
+            Assisted in maintaining the company’s internal database, ensuring data consistency, 
+            managing user access, and troubleshooting performance issues to keep workflows uninterrupted.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+<section id="experience" class="section fade-slide-in">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <!-- Pengalaman 1 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+        <div class="timeline-content">
+          <h3 class="text-xl font-semibold">IT Support Spesialist – PT Asoka Indonesia</h3>
+          <span class="text-sm text-gray-300">Feb 2023 – now</span>
+          <p class="mt-2 text-sm">
+            Responsible for diagnosing and repairing hardware issues such as computers and printers, configuring and maintaining network infrastructure, and assisting in database server monitoring and maintenance. Provided both on-site and remote technical support for branch offices, ensuring minimal downtime and smooth IT operations across the organization.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Pengalaman 2 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-tools"></i></div>
+        <div class="timeline-content">
+          <h3 class="text-xl font-semibold">IT Internship</h3>
+          <span class="text-sm text-gray-300">2021 – Present</span>
+          <p class="mt-2 text-sm">
+            Assisted IT staff in daily technical tasks, including basic computer and printer troubleshooting, supporting network configuration, and helping with database server maintenance. Provided support to ensure smooth operations and learned practical skills in IT system management.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Contact -->
+<section id="contact" class="section fade-slide-in">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <h3>Email</h3>
+          <p>muhamadluthfi3488@gmail.com</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+        <div>
+          <h3>WhatsApp</h3>
+          <p>+62 838-3154-8299</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+        <div>
+          <h3>LinkedIn</h3>
+          <p>linkedin.com/in/luthfialfian</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Footer -->
+  <footer class="text-center text-white py-10 bg-black bg-opacity-50">
+    <p>Muhamad Luthfi Alfian Website. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
