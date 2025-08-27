@@ -122,7 +122,6 @@ body {
     color: #e2e8f0;
   }
   
-  }
   
   /* Smooth scroll */
   html {
@@ -169,3 +168,24 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.6);
   }
   
+.skills-progress {
+  margin-top: 2rem;
+}
+.progress-item {
+  margin-bottom: 1rem;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+}
+.progress-bar {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  height: 12px;
+  overflow: hidden;
+}
+.progress-bar div {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #3b82f6, #9333ea);
+  border-radius: 8px;
+  transition: width 2s ease;
+}
